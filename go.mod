@@ -9,5 +9,3 @@ require (
 	github.com/onsi/gomega v1.10.4
 	github.com/fwhappy/otel v0.15.0
 )
-
-replace github.com/fwhappy/otel v0.15.0 => github.com/fwhappy/opentelemetry-go v0.15.0
