@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/fwhappy/otel/trace"
 	"github.com/go-redis/redis/v8/internal"
 	"github.com/go-redis/redis/v8/internal/proto"
-	"go.opentelemetry.io/otel/trace"
 )
 
 var noDeadline = time.Time{}

@@ -3,12 +3,12 @@ package redisotel
 import (
 	"context"
 
+	"github.com/fwhappy/otel"
+	"github.com/fwhappy/otel/codes"
+	"github.com/fwhappy/otel/label"
+	"github.com/fwhappy/otel/trace"
 	"github.com/go-redis/redis/extra/rediscmd"
 	"github.com/go-redis/redis/v8"
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/label"
-	"go.opentelemetry.io/otel/trace"
 )
 
 var tracer = otel.Tracer("github.com/go-redis/redis")

@@ -3,8 +3,8 @@ package internal
 import (
 	"context"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/metric"
+	"github.com/fwhappy/otel"
+	"github.com/fwhappy/otel/metric"
 )
 
 var (

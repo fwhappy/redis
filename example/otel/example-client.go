@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/fwhappy/otel"
+	meterStdout "github.com/fwhappy/otel/exporters/metric/stdout"
+	traceStdout "github.com/fwhappy/otel/exporters/trace/stdout"
+	"github.com/fwhappy/otel/sdk/metric/controller/push"
+	sdktrace "github.com/fwhappy/otel/sdk/trace"
 	"github.com/go-redis/redis/v8"
 	"github.com/go-redis/redis/v8/extra/redisotel"
-	"go.opentelemetry.io/otel"
-	meterStdout "go.opentelemetry.io/otel/exporters/metric/stdout"
-	traceStdout "go.opentelemetry.io/otel/exporters/trace/stdout"
-	"go.opentelemetry.io/otel/sdk/metric/controller/push"
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 )
 
 func main() {

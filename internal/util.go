@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
+	"github.com/fwhappy/otel"
+	"github.com/fwhappy/otel/trace"
 	"github.com/go-redis/redis/v8/internal/proto"
 	"github.com/go-redis/redis/v8/internal/util"
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/trace"
 )
 
 func Sleep(ctx context.Context, dur time.Duration) error {
