@@ -14,8 +14,8 @@ import (
 
 	"github.com/fwhappy/otel/label"
 	"github.com/fwhappy/otel/trace"
-	"github.com/go-redis/redis/v8/internal"
-	"github.com/go-redis/redis/v8/internal/pool"
+	"github.com/fwhappy/redis/v8/internal"
+	"github.com/fwhappy/redis/v8/internal/pool"
 )
 
 // Limiter is the interface of a rate limiter or a circuit breaker.

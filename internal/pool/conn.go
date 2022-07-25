@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/fwhappy/otel/trace"
-	"github.com/go-redis/redis/v8/internal"
-	"github.com/go-redis/redis/v8/internal/proto"
+	"github.com/fwhappy/redis/v8/internal"
+	"github.com/fwhappy/redis/v8/internal/proto"
 )
 
 var noDeadline = time.Time{}

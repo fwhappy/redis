@@ -6,8 +6,8 @@ import (
 
 	"github.com/fwhappy/otel"
 	"github.com/fwhappy/otel/trace"
-	"github.com/go-redis/redis/v8/internal/proto"
-	"github.com/go-redis/redis/v8/internal/util"
+	"github.com/fwhappy/redis/v8/internal/proto"
+	"github.com/fwhappy/redis/v8/internal/util"
 )
 
 func Sleep(ctx context.Context, dur time.Duration) error {
@@ -52,7 +52,7 @@ func isLower(s string) bool {
 
 //------------------------------------------------------------------------------
 
-var tracer = otel.Tracer("github.com/go-redis/redis")
+var tracer = otel.Tracer("github.com/fwhappy/redis")
 
 func WithSpan(ctx context.Context, name string, fn func(context.Context, trace.Span) error) error {
 	if span := trace.SpanFromContext(ctx); !span.IsRecording() {

@@ -3,8 +3,8 @@ package rediscensus
 import (
 	"context"
 
-	"github.com/go-redis/redis/extra/rediscmd"
-	"github.com/go-redis/redis/v8"
+	"github.com/fwhappy/redis/extra/rediscmd"
+	"github.com/fwhappy/redis/v8"
 	"go.opencensus.io/trace"
 )
 

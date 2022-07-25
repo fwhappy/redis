@@ -7,11 +7,11 @@ import (
 	"github.com/fwhappy/otel/codes"
 	"github.com/fwhappy/otel/label"
 	"github.com/fwhappy/otel/trace"
-	"github.com/go-redis/redis/extra/rediscmd"
-	"github.com/go-redis/redis/v8"
+	"github.com/fwhappy/redis/extra/rediscmd"
+	"github.com/fwhappy/redis/v8"
 )
 
-var tracer = otel.Tracer("github.com/go-redis/redis")
+var tracer = otel.Tracer("github.com/fwhappy/redis")
 
 type TracingHook struct{}
 

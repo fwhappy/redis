@@ -11,8 +11,8 @@ import (
 	traceStdout "github.com/fwhappy/otel/exporters/trace/stdout"
 	"github.com/fwhappy/otel/sdk/metric/controller/push"
 	sdktrace "github.com/fwhappy/otel/sdk/trace"
-	"github.com/go-redis/redis/v8"
-	"github.com/go-redis/redis/v8/extra/redisotel"
+	"github.com/fwhappy/redis/v8"
+	"github.com/fwhappy/redis/v8/extra/redisotel"
 )
 
 func main() {
